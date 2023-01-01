@@ -1,0 +1,23 @@
+{
+  "name": "spotify-dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kailyl/spotify-dashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kailyl/spotify-dashboard/issues"
+  },
+  "homepage": "https://github.com/kailyl/spotify-dashboard#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

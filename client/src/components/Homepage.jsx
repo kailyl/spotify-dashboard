@@ -5,7 +5,13 @@ export default function Homepage() {
   const [data, setData] = React.useState(null);
 
   React.useEffect(() => {
-    fetch("/api")
+    // fetch("/test")
+    //   .then((res) => res.json())
+    //   .then((data) => setData(data.message));
+    fetch("/dates",
+      {
+        method: "POST",
+      })
       .then((res) => res.json())
       .then((data) => setData(data.message));
   }, []);

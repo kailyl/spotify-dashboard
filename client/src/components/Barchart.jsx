@@ -98,7 +98,7 @@ export default function Barchart(props) {
           datasets: {
             bar: {
               barPercentage: 0.9,
-              categoryPercentage: 0.8
+              categoryPercentage: 0.6
             }
           },
           scales: {

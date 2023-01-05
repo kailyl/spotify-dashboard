@@ -5,8 +5,8 @@ import {
 	Route
 } from "react-router-dom";
 import Homepage from "./components/Homepage"; 
+import Barchart from "./components/Barchart";
 import ScrollToTop from "./components/ScrollToTop"
-import "./App.css";
 
 function App() {
 	return (

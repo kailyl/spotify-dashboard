@@ -3,6 +3,10 @@ body {
     overflow: hidden;
 }
 
+#aboutTop {
+    display: none
+}
+
 #main {
     padding: 1%;
     margin: 1%;
@@ -40,8 +44,8 @@ body {
     margin-right: 1%;
     margin-bottom: 0;
     padding: 0.3%;
-    width: 20vw;
-    height: 20vw;
+    width: 14.5vw;
+    height: 14.5vw;
     display: inline-block;
 }
 
@@ -200,13 +204,15 @@ body {
 
 #audioFeatures {
     text-align: center;
-    font-size: 10px;
+    font-size: 11px;
+    font-weight: bold;
     margin-top: -10px;
     margin-bottom: 20px;
 }
 
 #indivGraph {
-    margin-top: 0;
+    margin-top: 7px;
+    width: 100%;
 }
 
 #avgs {
@@ -223,7 +229,7 @@ ul {
 
 ul li.acousticness::before {
     content: "\2022"; 
-    color: rgb(211, 201, 206); 
+    color: rgb(51, 185, 65); 
     font-weight: 900; 
     display: inline-block;
     width: 1em; 
@@ -232,7 +238,7 @@ ul li.acousticness::before {
 
 ul li.liveness::before {
     content: "\2022"; 
-    color: rgb(190, 178, 167); 
+    color: rgb(62, 141, 220); 
     font-weight: 900; 
     display: inline-block;
     width: 1em; 
@@ -241,7 +247,7 @@ ul li.liveness::before {
 
 ul li.valence::before {
     content: "\2022"; 
-    color: rgb(213, 196, 161); 
+    color: rgb(229, 76, 76); 
     font-weight: 900; 
     display: inline-block;
     width: 1em; 
@@ -250,7 +256,7 @@ ul li.valence::before {
 
 ul li.instrumentalness::before {
     content: "\2022"; 
-    color: rgb(181, 178, 146); 
+    color: rgb(92, 215, 246); 
     font-weight: 900; 
     display: inline-block;
     width: 1em; 
@@ -259,7 +265,7 @@ ul li.instrumentalness::before {
 
 ul li.danceability::before {
     content: "\2022"; 
-    color: rgb(213, 211, 191); 
+    color: rgb(182, 136, 250); 
     font-weight: 900; 
     display: inline-block;
     width: 1em; 
@@ -268,7 +274,7 @@ ul li.danceability::before {
 
 ul li.speechiness::before {
     content: "\2022"; 
-    color: rgb(168, 173, 180); 
+    color: rgb(253, 227, 56); 
     font-weight: 900; 
     display: inline-block;
     width: 1em; 
@@ -277,7 +283,7 @@ ul li.speechiness::before {
 
 ul li.energy::before {
     content: "\2022"; 
-    color: rgb(210, 214, 217); 
+    color: rgb(255, 144, 215); 
     font-weight: 900; 
     display: inline-block;
     width: 1em; 
@@ -298,9 +304,10 @@ ul li.energy::before {
     display: inline-block;
     margin-left: 2%;
     vertical-align: top;
+    font-size: 13px
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1400px) {
     #all-date-stuff {
         width: 20vw;
     }
@@ -318,47 +325,35 @@ ul li.energy::before {
     }
 
     #songElem {
-        width: 22vw;
-        height: 22vw;
+        width: 16vw;
+        height: 16vw;
     }
 
     #bottom-boxes {
-        width: 71.5vw;
+        width: 81.5vw;
     }
 
     #averageGraph {
-        width: 37vw;
+        width: 32vw;
+    }
+
+    #top-artists {
+        width: 27vw;
     }
 }
 
-@media only screen and (max-width: 930px) {
-    #songElem {
-        width: 33vw;
-        height: 33vw;
-    }
-
-    #averageGraph {
-        width: 42vw;
-    }
-
-    #about {
-        width: 10vw;
-        font-size: 10px;
-    }
-}
-
-@media only screen and (max-width: 830px) {
+@media only screen and (max-width: 1270px) {
     #all-date-stuff {
         width: 10vw;
     }
 
     .dateElem {
         width: 95%;
-        font-size: 9px;
+        margin-bottom: 2px;
     }
 
     #all-song-stuff {
-        width: 80vw;
+        width: 81vw
     }
 
     #songz {
@@ -366,36 +361,47 @@ ul li.energy::before {
     }
 
     #songElem {
-        width: 38.2vw;
-        height: 38.2vw;
+        width: 18.5vw;
+        height: 18.5vw;
     }
+}
 
-    #bottom-boxes {
-        width: 80vw;
+@media only screen and (max-width: 1100px) {
+    #songElem {
+        width: 25vw;
+        height: 25vw;
     }
 
     #averageGraph {
-        width: 47vw;
+        width: 37vw;
     }
 
+    #about {
+        font-size: 12px;
+        width: 10vw
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #key {
+        display: none;
+    }
+    
     #avgs {
-        width: 60%;
-    }
-
-    #top-artists {
-        width: 18vw
+        width: 98%;
     }
 }
 
-@media only screen and (max-width: 660px) {
-    #title, #songTitle, #topTitle {
-        font-size: 14px;
-    }
 
-}
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 820px) {
     body {
         overflow: scroll;
+    }
+
+    #aboutTop { 
+        display: inline-block;
+        margin-bottom: 5px;
+        font-size: 12px
     }
 
     #all-date-stuff {
@@ -405,12 +411,13 @@ ul li.energy::before {
 
     #dates {
         height: 9vh;
+        font-size: 14px;
         overflow: scroll;
     }
 
     .dateElem {
         display: inline-block;
-        width: 10%;
+        width: 9.5%;
     }
 
     #all-song-stuff {
@@ -425,47 +432,53 @@ ul li.energy::before {
     }
 
     #songElem {
-        width: 48%;
+        width: 29vw;
+        height: 29vw;
     }
 
     #about {
-        display: block;
-        text-align: center;
-        margin: 0;
-        margin-top: 2%;
-        width: 100%;
+        display: none
     }
 
     #bottom-boxes {
         width: 95vw;
+        margin-bottom: 15px;
     }
 
     #top-artists {
-        width: 30vw;
+        width: 45.5vw;
     }
 
     #averageGraph {
-        width: 60vw;
+        width: 45.5vw;
         float: right;
-    }
+    } 
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 700px) {
     .dateElem {
-        width: 20%;
+        display: inline-block;
+        width: 13.8%;
     }
 
     #songElem {
-        width: 42vw;
-        height: 42vw;
-    }
-
-    #indivGraph {
-        margin-top: -10px;
+        width: 44.5vw;
+        height: 44.5vw;
     }
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 500px) {
+    .dateElem {
+        display: inline-block;
+        width: 22%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    body {
+        overflow: hidden;
+    }
+
     #songElem {
         width: 98%;
         height: 7vh;
@@ -476,36 +489,20 @@ ul li.energy::before {
     }
 
     #top-artists {
-        display: none;
+        width: 100%;
+        height: 50%;
     }
 
     #averageGraph {
-        width: 100%;
+        display: none
     }
-}
 
-@media only screen and (max-width: 280px) {
     .dateElem {
         width: 46.5%;
     }
 
-    #key {
-        margin-right: 2%;
-        margin-top: 2%;
-        float: right;
-    }
-}
-
-@media only screen and (max-width: 230px) {
-    #key {
-        display: none;
-    }
-
-    #avgs {
-        width: 98%;
-    }
-
-    .dateElem {
-        width: 98%;
+    #artistsRank {
+        height: 75%;
+        overflow: scroll;
     }
 }

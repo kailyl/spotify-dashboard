@@ -39,6 +39,9 @@ export default function Homepage() {
 
   return (
     <div id="main">
+      <div id="aboutTop">
+        Hi - I'm Kaily. This is what I've been listening to recently on Spotify. 
+      </div>
       <div id="all-date-stuff">
         <h3 id="title">days 🎧 </h3>
         <div id="dates">
@@ -82,7 +85,7 @@ export default function Homepage() {
                     speechiness={elem["audio_features"]["speechiness"]}
                     energy={elem["audio_features"]["energy"]}
                     />
-                  <div id="audioFeatures">audio features</div>
+                  <div id="audioFeatures">AUDIO FEATURES</div>
                 </div>
               </div>
             )}
@@ -111,7 +114,7 @@ export default function Homepage() {
                 speechiness={averages["speechiness"]}
                 energy={averages["energy"]}>
               </Barchart>
-              <div id="audioFeatures">average audio features</div>
+              <div id="audioFeatures">AVERAGE FEATURES</div>
             </div>
             <div id="key">
               <ul>
@@ -126,8 +129,7 @@ export default function Homepage() {
             </div>
           </div>
           <div id="about">
-            Hi - I'm Kaily. This is what I've been listening to recently on Spotify. Click on a date to view some songs and analytics 
-            about them.
+            Hi - I'm Kaily. This is what I've been listening to recently on Spotify. 
           </div>
         </div>
       </div>
